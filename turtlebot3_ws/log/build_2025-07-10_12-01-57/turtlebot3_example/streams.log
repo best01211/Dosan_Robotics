@@ -1,0 +1,29 @@
+[3.442s] Invoking command in '/home/andy/turtlebot3_ws/build/turtlebot3_example': CMAKE_PREFIX_PATH=/home/andy/turtlebot3_ws/install/turtlebot3_msgs:/home/andy/turtlebot3_ws/install/turtlebot3_navigation2:/home/andy/turtlebot3_ws/install/turtlebot3_fake_node:/home/andy/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/andy/turtlebot3_ws/install/turtlebot3_gazebo:/home/andy/turtlebot3_ws/install/turtlebot3_description:/home/andy/turtlebot3_ws/install/turtlebot3_cartographer:/home/andy/turtlebot3_ws/install/dynamixel_sdk_examples:/home/andy/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/andy/turtlebot3_ws/install/dynamixel_sdk LD_LIBRARY_PATH=/home/andy/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/andy/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/andy/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/andy/turtlebot3_ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andy/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/andy/turtlebot3_ws/build/turtlebot3_example/build --no-deps symlink_data
+[4.607s] running develop
+[5.602s] running egg_info
+[5.604s] creating turtlebot3_example.egg-info
+[5.605s] writing turtlebot3_example.egg-info/PKG-INFO
+[5.607s] writing dependency_links to turtlebot3_example.egg-info/dependency_links.txt
+[5.608s] writing entry points to turtlebot3_example.egg-info/entry_points.txt
+[5.610s] writing requirements to turtlebot3_example.egg-info/requires.txt
+[5.612s] writing top-level names to turtlebot3_example.egg-info/top_level.txt
+[5.614s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[5.632s] reading manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[5.636s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[5.648s] running build_ext
+[5.651s] Creating /home/andy/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3-example.egg-link (link to .)
+[5.661s] Installing turtlebot3_absolute_move script to /home/andy/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[5.663s] Installing turtlebot3_interactive_marker script to /home/andy/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[5.664s] Installing turtlebot3_obstacle_detection script to /home/andy/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[5.665s] Installing turtlebot3_patrol_client script to /home/andy/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[5.665s] Installing turtlebot3_patrol_server script to /home/andy/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[5.666s] Installing turtlebot3_relative_move script to /home/andy/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[5.666s] 
+[5.666s] Installed /home/andy/turtlebot3_ws/build/turtlebot3_example
+[5.668s] running symlink_data
+[5.668s] creating /home/andy/turtlebot3_ws/install/turtlebot3_example/share/ament_index
+[5.669s] creating /home/andy/turtlebot3_ws/install/turtlebot3_example/share/ament_index/resource_index
+[5.670s] creating /home/andy/turtlebot3_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[5.671s] symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_example/resource/turtlebot3_example -> /home/andy/turtlebot3_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[5.672s] symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_example/package.xml -> /home/andy/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example
+[5.920s] Invoked command in '/home/andy/turtlebot3_ws/build/turtlebot3_example' returned '0': CMAKE_PREFIX_PATH=/home/andy/turtlebot3_ws/install/turtlebot3_msgs:/home/andy/turtlebot3_ws/install/turtlebot3_navigation2:/home/andy/turtlebot3_ws/install/turtlebot3_fake_node:/home/andy/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/andy/turtlebot3_ws/install/turtlebot3_gazebo:/home/andy/turtlebot3_ws/install/turtlebot3_description:/home/andy/turtlebot3_ws/install/turtlebot3_cartographer:/home/andy/turtlebot3_ws/install/dynamixel_sdk_examples:/home/andy/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/andy/turtlebot3_ws/install/dynamixel_sdk LD_LIBRARY_PATH=/home/andy/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/andy/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/andy/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/andy/turtlebot3_ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andy/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/andy/turtlebot3_ws/build/turtlebot3_example/build --no-deps symlink_data

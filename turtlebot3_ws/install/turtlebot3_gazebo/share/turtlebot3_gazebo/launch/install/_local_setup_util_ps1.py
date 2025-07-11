@@ -1,0 +1,1 @@
+/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch/install/_local_setup_util_ps1.py

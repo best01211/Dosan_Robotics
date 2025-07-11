@@ -1,0 +1,52 @@
+[0.042s] Invoking command in '/home/andy/turtlebot3_ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/andy/turtlebot3_ws/src/turtlebot3/turtlebot3_navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/andy/turtlebot3_ws/install/turtlebot3_navigation2
+[0.223s] -- The C compiler identification is GNU 11.4.0
+[0.391s] -- The CXX compiler identification is GNU 11.4.0
+[0.407s] -- Detecting C compiler ABI info
+[0.574s] -- Detecting C compiler ABI info - done
+[0.605s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.606s] -- Detecting C compile features
+[0.606s] -- Detecting C compile features - done
+[0.612s] -- Detecting CXX compiler ABI info
+[0.790s] -- Detecting CXX compiler ABI info - done
+[0.806s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.806s] -- Detecting CXX compile features
+[0.810s] -- Detecting CXX compile features - done
+[0.817s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.702s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.864s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.056s] -- Configuring done
+[2.063s] -- Generating done
+[2.066s] -- Build files have been written to: /home/andy/turtlebot3_ws/build/turtlebot3_navigation2
+[2.105s] Invoked command in '/home/andy/turtlebot3_ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/andy/turtlebot3_ws/src/turtlebot3/turtlebot3_navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/andy/turtlebot3_ws/install/turtlebot3_navigation2
+[2.114s] Invoking command in '/home/andy/turtlebot3_ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/andy/turtlebot3_ws/build/turtlebot3_navigation2 -- -j8 -l8
+[2.230s] Invoked command in '/home/andy/turtlebot3_ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/andy/turtlebot3_ws/build/turtlebot3_navigation2 -- -j8 -l8
+[2.278s] Invoking command in '/home/andy/turtlebot3_ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/andy/turtlebot3_ws/build/turtlebot3_navigation2
+[2.330s] -- Install configuration: ""
+[2.331s] -- Execute custom install script
+[2.331s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/launch/navigation2.launch.py
+[2.346s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/map.pgm
+[2.376s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/map.yaml
+[2.400s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/burger.yaml
+[2.428s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/burger_cam.yaml
+[2.452s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble/burger.yaml
+[2.474s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble/burger_cam.yaml
+[2.502s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble/waffle.yaml
+[2.534s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble/waffle_pi.yaml
+[2.560s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle.yaml
+[2.578s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle_pi.yaml
+[2.595s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz
+[2.613s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/ament_index/resource_index/package_run_dependencies/turtlebot3_navigation2
+[2.632s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/ament_index/resource_index/parent_prefix_path/turtlebot3_navigation2
+[2.654s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.sh
+[2.678s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.dsv
+[2.694s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.sh
+[2.723s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.dsv
+[2.744s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.bash
+[2.771s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.sh
+[2.808s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.zsh
+[2.850s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.dsv
+[2.873s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv
+[2.895s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/ament_index/resource_index/packages/turtlebot3_navigation2
+[2.938s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config.cmake
+[2.983s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config-version.cmake
+[3.001s] -- Symlinking: /home/andy/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.xml

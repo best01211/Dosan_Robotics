@@ -1,0 +1,3 @@
+Invoking command in '/home/andy/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/andy/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces -- -j8 -l8
+Invoked command in '/home/andy/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/andy/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces -- -j8 -l8
+Invoking command in '/home/andy/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/andy/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces

@@ -1,0 +1,30 @@
+running develop
+running egg_info
+creating turtlebot3_autorace_camera.egg-info
+writing turtlebot3_autorace_camera.egg-info/PKG-INFO
+writing dependency_links to turtlebot3_autorace_camera.egg-info/dependency_links.txt
+writing entry points to turtlebot3_autorace_camera.egg-info/entry_points.txt
+writing requirements to turtlebot3_autorace_camera.egg-info/requires.txt
+writing top-level names to turtlebot3_autorace_camera.egg-info/top_level.txt
+writing manifest file 'turtlebot3_autorace_camera.egg-info/SOURCES.txt'
+reading manifest file 'turtlebot3_autorace_camera.egg-info/SOURCES.txt'
+writing manifest file 'turtlebot3_autorace_camera.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/lib/python3.10/site-packages/turtlebot3-autorace-camera.egg-link (link to .)
+Installing image_compensation script to /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/lib/turtlebot3_autorace_camera
+Installing image_projection script to /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/lib/turtlebot3_autorace_camera
+
+Installed /home/andy/turtlebot3_ws/build/turtlebot3_autorace_camera
+running symlink_data
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/share/ament_index
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/share/ament_index/resource_index
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/share/ament_index/resource_index/packages
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_camera/resource/turtlebot3_autorace_camera -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/share/ament_index/resource_index/packages
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_camera/package.xml -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/share/turtlebot3_autorace_camera
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/share/turtlebot3_autorace_camera/launch
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_camera/launch/extrinsic_camera_calibration.launch.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/share/turtlebot3_autorace_camera/launch
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_camera/launch/intrinsic_camera_calibration.launch.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/share/turtlebot3_autorace_camera/launch
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/share/turtlebot3_autorace_camera/calibration
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/share/turtlebot3_autorace_camera/calibration/extrinsic_calibration
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_camera/calibration/extrinsic_calibration/projection.yaml -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/share/turtlebot3_autorace_camera/calibration/extrinsic_calibration
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_camera/calibration/extrinsic_calibration/compensation.yaml -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_camera/share/turtlebot3_autorace_camera/calibration/extrinsic_calibration
