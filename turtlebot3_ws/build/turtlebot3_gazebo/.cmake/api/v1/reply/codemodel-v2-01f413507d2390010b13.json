@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-617429744e1abdae5f55.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "turtlebot3_gazebo",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "obstacle1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-obstacle1-a7370c2fada687ad54cd.json",
+					"name" : "obstacle1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "obstacle2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-obstacle2-c6d0dc61ee12b1b65451.json",
+					"name" : "obstacle2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "obstacles::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-obstacles-de3e81c251d37cef1138.json",
+					"name" : "obstacles",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "traffic_bar_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-traffic_bar_plugin-fc4596124f9ff6771275.json",
+					"name" : "traffic_bar_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "traffic_light_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-traffic_light_plugin-f59665ffb0e0baa9ff50.json",
+					"name" : "traffic_light_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtlebot3_drive::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtlebot3_drive-34a43f0ed6f264d7e983.json",
+					"name" : "turtlebot3_drive",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtlebot3_gazebo_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtlebot3_gazebo_uninstall-de6688b11bb42f204b80.json",
+					"name" : "turtlebot3_gazebo_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-a863d859b51aa633f2b7.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo",
+		"source" : "/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

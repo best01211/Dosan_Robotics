@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_node_lib[0m
+[ 85%] Built target turtlebot3_node_lib
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_ros[0m
+[ 92%] [32m[1mLinking CXX executable turtlebot3_ros[0m
+[100%] Built target turtlebot3_ros

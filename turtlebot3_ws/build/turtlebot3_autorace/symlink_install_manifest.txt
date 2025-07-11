@@ -1,0 +1,15 @@
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/ament_index/resource_index/package_run_dependencies/turtlebot3_autorace
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/ament_index/resource_index/parent_prefix_path/turtlebot3_autorace
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/turtlebot3_autorace/environment/ament_prefix_path.sh
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/turtlebot3_autorace/environment/ament_prefix_path.dsv
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/turtlebot3_autorace/environment/path.sh
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/turtlebot3_autorace/environment/path.dsv
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/turtlebot3_autorace/local_setup.bash
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/turtlebot3_autorace/local_setup.sh
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/turtlebot3_autorace/local_setup.zsh
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/turtlebot3_autorace/local_setup.dsv
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/turtlebot3_autorace/package.dsv
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/ament_index/resource_index/packages/turtlebot3_autorace
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/turtlebot3_autorace/cmake/turtlebot3_autoraceConfig.cmake
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/turtlebot3_autorace/cmake/turtlebot3_autoraceConfig-version.cmake
+/home/andy/turtlebot3_ws/install/turtlebot3_autorace/share/turtlebot3_autorace/package.xml

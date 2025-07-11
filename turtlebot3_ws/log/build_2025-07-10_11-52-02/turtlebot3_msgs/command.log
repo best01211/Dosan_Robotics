@@ -1,0 +1,4 @@
+Invoking command in '/home/andy/turtlebot3_ws/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/andy/turtlebot3_ws/build/turtlebot3_msgs -- -j8 -l8
+Invoked command in '/home/andy/turtlebot3_ws/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/andy/turtlebot3_ws/build/turtlebot3_msgs -- -j8 -l8
+Invoking command in '/home/andy/turtlebot3_ws/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/andy/turtlebot3_ws/build/turtlebot3_msgs
+Invoked command in '/home/andy/turtlebot3_ws/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/andy/turtlebot3_ws/build/turtlebot3_msgs
