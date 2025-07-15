@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/andy/turtlebot3_ws/install/turtlebot3_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rokey/turtlebot3_ws/install/turtlebot3_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/andy/turtlebot3_ws/install/turtlebot3_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rokey/turtlebot3_ws/install/turtlebot3_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/andy/turtlebot3_ws/install/turtlebot3_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rokey/turtlebot3_ws/install/turtlebot3_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/andy/turtlebot3_ws/install/turtlebot3_gazebo/${destination}")
+      set(destination "/home/rokey/turtlebot3_ws/install/turtlebot3_gazebo/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,58 +311,58 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "turtlebot3_drive" "DESTINATION" "lib/turtlebot3_gazebo")
-include("/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch" "models" "rviz" "urdf" "worlds" "DESTINATION" "share/turtlebot3_gazebo/")
-ament_cmake_symlink_install_directory("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" DIRECTORY "launch" "models" "rviz" "urdf" "worlds" "DESTINATION" "share/turtlebot3_gazebo/")
+ament_cmake_symlink_install_directory("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" DIRECTORY "launch" "models" "rviz" "urdf" "worlds" "DESTINATION" "share/turtlebot3_gazebo/")
 
 # install(DIRECTORY "include/" "DESTINATION" "include/")
-ament_cmake_symlink_install_directory("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" DIRECTORY "include/" "DESTINATION" "include/")
+ament_cmake_symlink_install_directory("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" DIRECTORY "include/" "DESTINATION" "include/")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_gazebo/environment")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_gazebo/environment")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_gazebo/environment")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_gazebo/environment")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_gazebo/environment")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_gazebo/environment")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_gazebo/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_gazebo/environment")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_gazebo/environment")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_gazebo/environment")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_gazebo/environment")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_gazebo/environment")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_gazebo/environment")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_gazebo/environment")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_gazebo")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_gazebo")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_gazebo")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_gazebo")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_gazebo")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_gazebo")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_gazebo")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_gazebo")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_gazebo")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_gazebo")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_gazebo")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_gazebo")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_gazebo")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_gazebo")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_gazebo")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_gazebo")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_gazebo")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_gazebo")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_gazebo")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_gazebo")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/turtlebot3_gazebo/cmake")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/turtlebot3_gazebo/cmake")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/turtlebot3_gazebo/cmake")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/turtlebot3_gazebo/cmake")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/turtlebot3_gazebo/cmake")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/turtlebot3_gazebo/cmake")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/turtlebot3_gazebo/cmake")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/turtlebot3_gazebo/cmake")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_core/turtlebot3_gazeboConfig.cmake" "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_core/turtlebot3_gazeboConfig-version.cmake" "DESTINATION" "share/turtlebot3_gazebo/cmake")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_core/turtlebot3_gazeboConfig.cmake" "/home/andy/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_core/turtlebot3_gazeboConfig-version.cmake" "DESTINATION" "share/turtlebot3_gazebo/cmake")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_core/turtlebot3_gazeboConfig.cmake" "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_core/turtlebot3_gazeboConfig-version.cmake" "DESTINATION" "share/turtlebot3_gazebo/cmake")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_core/turtlebot3_gazeboConfig.cmake" "/home/rokey/turtlebot3_ws/build/turtlebot3_gazebo/ament_cmake_core/turtlebot3_gazeboConfig-version.cmake" "DESTINATION" "share/turtlebot3_gazebo/cmake")
 
-# install(FILES "/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/package.xml" "DESTINATION" "share/turtlebot3_gazebo")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/package.xml" "DESTINATION" "share/turtlebot3_gazebo")
+# install(FILES "/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/package.xml" "DESTINATION" "share/turtlebot3_gazebo")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo" FILES "/home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/package.xml" "DESTINATION" "share/turtlebot3_gazebo")

@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "turtlebot3_bringup")
-set(turtlebot3_bringup_VERSION "2.3.2")
+set(turtlebot3_bringup_VERSION "2.3.3")
 set(turtlebot3_bringup_MAINTAINER "Pyo <pyo@robotis.com>")
 set(turtlebot3_bringup_BUILD_DEPENDS )
 set(turtlebot3_bringup_BUILDTOOL_DEPENDS "ament_cmake")

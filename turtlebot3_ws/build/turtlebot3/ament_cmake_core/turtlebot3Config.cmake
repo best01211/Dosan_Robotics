@@ -16,7 +16,7 @@ set(_turtlebot3_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT turtlebot3_FIND_QUIETLY)
-  message(STATUS "Found turtlebot3: 2.3.2 (${turtlebot3_DIR})")
+  message(STATUS "Found turtlebot3: 2.3.3 (${turtlebot3_DIR})")
 endif()
 
 # warn when using a deprecated package

@@ -1,0 +1,35 @@
+[2.938s] Invoking command in '/home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission': PYTHONPATH=/home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission/build --no-deps symlink_data
+[3.495s] running develop
+[3.840s] running egg_info
+[3.840s] creating turtlebot3_autorace_mission.egg-info
+[3.861s] writing turtlebot3_autorace_mission.egg-info/PKG-INFO
+[3.861s] writing dependency_links to turtlebot3_autorace_mission.egg-info/dependency_links.txt
+[3.861s] writing entry points to turtlebot3_autorace_mission.egg-info/entry_points.txt
+[3.862s] writing requirements to turtlebot3_autorace_mission.egg-info/requires.txt
+[3.862s] writing top-level names to turtlebot3_autorace_mission.egg-info/top_level.txt
+[3.862s] writing manifest file 'turtlebot3_autorace_mission.egg-info/SOURCES.txt'
+[3.905s] reading manifest file 'turtlebot3_autorace_mission.egg-info/SOURCES.txt'
+[3.905s] writing manifest file 'turtlebot3_autorace_mission.egg-info/SOURCES.txt'
+[3.928s] running build_ext
+[3.928s] Creating /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3-autorace-mission.egg-link (link to .)
+[3.929s] Installing avoid_construction script to /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/turtlebot3_autorace_mission
+[3.929s] Installing control_lane script to /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/turtlebot3_autorace_mission
+[3.929s] Installing mission_tunnel script to /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/turtlebot3_autorace_mission
+[3.929s] 
+[3.929s] Installed /home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission
+[3.929s] running symlink_data
+[3.930s] creating /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/ament_index
+[3.930s] creating /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/ament_index/resource_index
+[3.930s] creating /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/ament_index/resource_index/packages
+[3.930s] symbolically linking /home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission/resource/turtlebot3_autorace_mission -> /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/ament_index/resource_index/packages
+[3.930s] symbolically linking /home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission/package.xml -> /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission
+[3.930s] creating /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/launch
+[3.930s] symbolically linking /home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission/launch/control_lane.launch.py -> /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/launch
+[3.930s] symbolically linking /home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission/launch/mission_construction.launch.py -> /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/launch
+[3.931s] symbolically linking /home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission/launch/mission_tunnel.launch.py -> /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/launch
+[3.931s] creating /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/param
+[3.931s] symbolically linking /home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission/param/navigation.yaml -> /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/param
+[3.931s] creating /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/map
+[3.931s] symbolically linking /home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission/map/map.pgm -> /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/map
+[3.931s] symbolically linking /home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission/map/map.yaml -> /home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/map
+[3.983s] Invoked command in '/home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission' returned '0': PYTHONPATH=/home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rokey/turtlebot3_ws/build/turtlebot3_autorace_mission/build --no-deps symlink_data

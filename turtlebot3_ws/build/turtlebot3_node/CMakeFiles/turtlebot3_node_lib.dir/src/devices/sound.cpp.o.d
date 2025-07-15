@@ -1,9 +1,9 @@
 CMakeFiles/turtlebot3_node_lib.dir/src/devices/sound.cpp.o: \
- /home/andy/turtlebot3_ws/src/turtlebot3/turtlebot3_node/src/devices/sound.cpp \
+ /home/rokey/turtlebot3_ws/src/turtlebot3/turtlebot3_node/src/devices/sound.cpp \
  /usr/include/stdc-predef.h \
- /home/andy/turtlebot3_ws/src/turtlebot3/turtlebot3_node/include/turtlebot3_node/devices/sound.hpp \
- /home/andy/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/srv/sound.hpp \
- /home/andy/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/srv/detail/sound__struct.hpp \
+ /home/rokey/turtlebot3_ws/src/turtlebot3/turtlebot3_node/include/turtlebot3_node/devices/sound.hpp \
+ /home/rokey/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/srv/sound.hpp \
+ /home/rokey/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/srv/detail/sound__struct.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -170,8 +170,8 @@ CMakeFiles/turtlebot3_node_lib.dir/src/devices/sound.cpp.o: \
  /usr/include/c++/11/stdexcept \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
- /home/andy/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/srv/detail/sound__builder.hpp \
- /home/andy/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/srv/detail/sound__traits.hpp \
+ /home/rokey/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/srv/detail/sound__builder.hpp \
+ /home/rokey/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/srv/detail/sound__traits.hpp \
  /usr/include/c++/11/sstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \
  /usr/include/c++/11/bits/locale_classes.h \
@@ -199,15 +199,15 @@ CMakeFiles/turtlebot3_node_lib.dir/src/devices/sound.cpp.o: \
  /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h \
  /usr/include/c++/11/bits/quoted_string.h \
- /home/andy/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/srv/detail/sound__type_support.hpp \
+ /home/rokey/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/srv/detail/sound__type_support.hpp \
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
- /home/andy/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/rokey/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
- /home/andy/turtlebot3_ws/src/turtlebot3/turtlebot3_node/include/turtlebot3_node/devices/devices.hpp \
+ /home/rokey/turtlebot3_ws/src/turtlebot3/turtlebot3_node/include/turtlebot3_node/devices/devices.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -625,15 +625,15 @@ CMakeFiles/turtlebot3_node_lib.dir/src/devices/sound.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/andy/turtlebot3_ws/src/turtlebot3/turtlebot3_node/include/turtlebot3_node/control_table.hpp \
- /home/andy/turtlebot3_ws/src/turtlebot3/turtlebot3_node/include/turtlebot3_node/dynamixel_sdk_wrapper.hpp \
- /home/andy/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/dynamixel_sdk.h \
- /home/andy/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_read.h \
- /home/andy/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/port_handler.h \
- /home/andy/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/packet_handler.h \
- /home/andy/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_handler.h \
- /home/andy/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_write.h \
- /home/andy/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_read.h \
- /home/andy/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_write.h \
- /home/andy/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_fast_sync_read.h \
- /home/andy/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_fast_bulk_read.h
+ /home/rokey/turtlebot3_ws/src/turtlebot3/turtlebot3_node/include/turtlebot3_node/control_table.hpp \
+ /home/rokey/turtlebot3_ws/src/turtlebot3/turtlebot3_node/include/turtlebot3_node/dynamixel_sdk_wrapper.hpp \
+ /home/rokey/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/dynamixel_sdk.h \
+ /home/rokey/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_read.h \
+ /home/rokey/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/port_handler.h \
+ /home/rokey/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/packet_handler.h \
+ /home/rokey/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_handler.h \
+ /home/rokey/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_write.h \
+ /home/rokey/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_read.h \
+ /home/rokey/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_write.h \
+ /home/rokey/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_fast_sync_read.h \
+ /home/rokey/turtlebot3_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_fast_bulk_read.h

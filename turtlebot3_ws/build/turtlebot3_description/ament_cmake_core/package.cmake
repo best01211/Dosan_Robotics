@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "turtlebot3_description")
-set(turtlebot3_description_VERSION "2.3.2")
+set(turtlebot3_description_VERSION "2.3.3")
 set(turtlebot3_description_MAINTAINER "Pyo <pyo@robotis.com>")
 set(turtlebot3_description_BUILD_DEPENDS "urdf" "xacro")
 set(turtlebot3_description_BUILDTOOL_DEPENDS "ament_cmake")

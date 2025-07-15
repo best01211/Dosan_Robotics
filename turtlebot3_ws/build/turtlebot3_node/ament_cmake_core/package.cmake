@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "turtlebot3_node")
-set(turtlebot3_node_VERSION "2.3.2")
+set(turtlebot3_node_VERSION "2.3.3")
 set(turtlebot3_node_MAINTAINER "Pyo <pyo@robotis.com>")
 set(turtlebot3_node_BUILD_DEPENDS "dynamixel_sdk" "geometry_msgs" "message_filters" "nav_msgs" "rclcpp" "rcutils" "sensor_msgs" "std_msgs" "std_srvs" "tf2" "tf2_ros" "turtlebot3_msgs")
 set(turtlebot3_node_BUILDTOOL_DEPENDS "ament_cmake")

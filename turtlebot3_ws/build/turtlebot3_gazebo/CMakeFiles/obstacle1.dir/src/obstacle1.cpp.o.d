@@ -1,7 +1,7 @@
 CMakeFiles/obstacle1.dir/src/obstacle1.cpp.o: \
- /home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/src/obstacle1.cpp \
+ /home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/src/obstacle1.cpp \
  /usr/include/stdc-predef.h \
- /home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/turtlebot3_gazebo/obstacle1.hpp \
+ /home/rokey/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/turtlebot3_gazebo/obstacle1.hpp \
  /usr/include/ignition/math6/ignition/math.hh \
  /usr/include/ignition/math6/gz/math.hh \
  /usr/include/ignition/math6/gz/math/config.hh \

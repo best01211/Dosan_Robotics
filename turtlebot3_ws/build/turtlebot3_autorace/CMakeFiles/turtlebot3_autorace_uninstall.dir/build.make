@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace
+CMAKE_SOURCE_DIR = /home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andy/turtlebot3_ws/build/turtlebot3_autorace
+CMAKE_BINARY_DIR = /home/rokey/turtlebot3_ws/build/turtlebot3_autorace
 
 # Utility rule file for turtlebot3_autorace_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/turtlebot3_autorace_uninstall.dir/compiler_depend.make
 include CMakeFiles/turtlebot3_autorace_uninstall.dir/progress.make
 
 CMakeFiles/turtlebot3_autorace_uninstall:
-	/usr/bin/cmake -P /home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 turtlebot3_autorace_uninstall: CMakeFiles/turtlebot3_autorace_uninstall
 turtlebot3_autorace_uninstall: CMakeFiles/turtlebot3_autorace_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/turtlebot3_autorace_uninstall.dir/clean:
 .PHONY : CMakeFiles/turtlebot3_autorace_uninstall.dir/clean
 
 CMakeFiles/turtlebot3_autorace_uninstall.dir/depend:
-	cd /home/andy/turtlebot3_ws/build/turtlebot3_autorace && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace /home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace /home/andy/turtlebot3_ws/build/turtlebot3_autorace /home/andy/turtlebot3_ws/build/turtlebot3_autorace /home/andy/turtlebot3_ws/build/turtlebot3_autorace/CMakeFiles/turtlebot3_autorace_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rokey/turtlebot3_ws/build/turtlebot3_autorace && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace /home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace /home/rokey/turtlebot3_ws/build/turtlebot3_autorace /home/rokey/turtlebot3_ws/build/turtlebot3_autorace /home/rokey/turtlebot3_ws/build/turtlebot3_autorace/CMakeFiles/turtlebot3_autorace_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/turtlebot3_autorace_uninstall.dir/depend
 

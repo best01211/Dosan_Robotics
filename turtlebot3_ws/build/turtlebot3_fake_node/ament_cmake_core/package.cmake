@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "turtlebot3_fake_node")
-set(turtlebot3_fake_node_VERSION "2.3.6")
+set(turtlebot3_fake_node_VERSION "2.3.8")
 set(turtlebot3_fake_node_MAINTAINER "Pyo <pyo@robotis.com>")
 set(turtlebot3_fake_node_BUILD_DEPENDS "ament_cmake" "geometry_msgs" "nav_msgs" "rclcpp" "sensor_msgs" "tf2" "tf2_msgs" "turtlebot3_msgs")
 set(turtlebot3_fake_node_BUILDTOOL_DEPENDS )

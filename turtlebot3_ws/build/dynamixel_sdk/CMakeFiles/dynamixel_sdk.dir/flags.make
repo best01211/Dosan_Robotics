@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Ddynamixel_sdk_EXPORTS
 
-CXX_INCLUDES = -I/home/andy/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk/include/dynamixel_sdk
+CXX_INCLUDES = -I/home/rokey/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk/include/dynamixel_sdk
 
 CXX_FLAGS = -fPIC -Wall -Wextra -Wpedantic -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable
 

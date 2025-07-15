@@ -1,1 +1,1 @@
-/home/andy/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup/launch/rviz2.launch.py
+/home/rokey/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup/launch/rviz2.launch.py

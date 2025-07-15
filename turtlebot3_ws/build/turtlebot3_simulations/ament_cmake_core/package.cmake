@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "turtlebot3_simulations")
-set(turtlebot3_simulations_VERSION "2.3.6")
+set(turtlebot3_simulations_VERSION "2.3.8")
 set(turtlebot3_simulations_MAINTAINER "Pyo <pyo@robotis.com>")
 set(turtlebot3_simulations_BUILD_DEPENDS )
 set(turtlebot3_simulations_BUILDTOOL_DEPENDS "ament_cmake")

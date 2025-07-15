@@ -1,1 +1,1 @@
-/home/andy/turtlebot3_ws/build/dynamixel_sdk_examples/ament_cmake_core/dynamixel_sdk_examplesConfig.cmake
+/home/rokey/turtlebot3_ws/build/dynamixel_sdk_examples/ament_cmake_core/dynamixel_sdk_examplesConfig.cmake

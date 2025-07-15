@@ -16,7 +16,7 @@ set(_turtlebot3_gazebo_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT turtlebot3_gazebo_FIND_QUIETLY)
-  message(STATUS "Found turtlebot3_gazebo: 2.3.6 (${turtlebot3_gazebo_DIR})")
+  message(STATUS "Found turtlebot3_gazebo: 2.3.8 (${turtlebot3_gazebo_DIR})")
 endif()
 
 # warn when using a deprecated package

@@ -1,8 +1,8 @@
-# Install script for directory: /home/andy/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk
+# Install script for directory: /home/rokey/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/andy/turtlebot3_ws/install/dynamixel_sdk")
+  set(CMAKE_INSTALL_PREFIX "/home/rokey/turtlebot3_ws/install/dynamixel_sdk")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/andy/turtlebot3_ws/build/dynamixel_sdk/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/rokey/turtlebot3_ws/build/dynamixel_sdk/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -53,7 +53,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdynamixel_sdk.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/andy/turtlebot3_ws/build/dynamixel_sdk/libdynamixel_sdk.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/rokey/turtlebot3_ws/build/dynamixel_sdk/libdynamixel_sdk.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdynamixel_sdk.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdynamixel_sdk.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -69,7 +69,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   execute_process(
         COMMAND
         "/usr/bin/python3" "-m" "compileall"
-        "/home/andy/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk"
+        "/home/rokey/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk"
       )
 endif()
 
@@ -77,7 +77,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake"
-         "/home/andy/turtlebot3_ws/build/dynamixel_sdk/CMakeFiles/Export/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake")
+         "/home/rokey/turtlebot3_ws/build/dynamixel_sdk/CMakeFiles/Export/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake/dynamixel_sdkExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -86,9 +86,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/andy/turtlebot3_ws/build/dynamixel_sdk/CMakeFiles/Export/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/rokey/turtlebot3_ws/build/dynamixel_sdk/CMakeFiles/Export/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/andy/turtlebot3_ws/build/dynamixel_sdk/CMakeFiles/Export/share/dynamixel_sdk/cmake/dynamixel_sdkExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/rokey/turtlebot3_ws/build/dynamixel_sdk/CMakeFiles/Export/share/dynamixel_sdk/cmake/dynamixel_sdkExport-noconfig.cmake")
   endif()
 endif()
 
@@ -100,5 +100,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/andy/turtlebot3_ws/build/dynamixel_sdk/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rokey/turtlebot3_ws/build/dynamixel_sdk/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

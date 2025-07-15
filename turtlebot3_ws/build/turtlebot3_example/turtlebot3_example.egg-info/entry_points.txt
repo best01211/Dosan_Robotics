@@ -5,4 +5,3 @@ turtlebot3_obstacle_detection = turtlebot3_example.turtlebot3_obstacle_detection
 turtlebot3_patrol_client = turtlebot3_example.turtlebot3_patrol.turtlebot3_patrol_client:main
 turtlebot3_patrol_server = turtlebot3_example.turtlebot3_patrol.turtlebot3_patrol_server:main
 turtlebot3_relative_move = turtlebot3_example.turtlebot3_relative_move.turtlebot3_relative_move:main
-

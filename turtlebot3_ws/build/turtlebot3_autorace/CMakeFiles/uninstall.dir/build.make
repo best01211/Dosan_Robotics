@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace
+CMAKE_SOURCE_DIR = /home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andy/turtlebot3_ws/build/turtlebot3_autorace
+CMAKE_BINARY_DIR = /home/rokey/turtlebot3_ws/build/turtlebot3_autorace
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/andy/turtlebot3_ws/build/turtlebot3_autorace && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace /home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace /home/andy/turtlebot3_ws/build/turtlebot3_autorace /home/andy/turtlebot3_ws/build/turtlebot3_autorace /home/andy/turtlebot3_ws/build/turtlebot3_autorace/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rokey/turtlebot3_ws/build/turtlebot3_autorace && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace /home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace /home/rokey/turtlebot3_ws/build/turtlebot3_autorace /home/rokey/turtlebot3_ws/build/turtlebot3_autorace /home/rokey/turtlebot3_ws/build/turtlebot3_autorace/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

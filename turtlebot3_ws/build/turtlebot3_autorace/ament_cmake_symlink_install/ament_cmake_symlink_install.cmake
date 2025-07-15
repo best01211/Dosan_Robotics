@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/andy/turtlebot3_ws/install/turtlebot3_autorace/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rokey/turtlebot3_ws/install/turtlebot3_autorace/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/andy/turtlebot3_ws/install/turtlebot3_autorace/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rokey/turtlebot3_ws/install/turtlebot3_autorace/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/andy/turtlebot3_ws/install/turtlebot3_autorace/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rokey/turtlebot3_ws/install/turtlebot3_autorace/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/andy/turtlebot3_ws/install/turtlebot3_autorace/${destination}")
+      set(destination "/home/rokey/turtlebot3_ws/install/turtlebot3_autorace/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,44 +310,44 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_autorace" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_autorace" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_autorace" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_autorace" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_autorace" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_autorace" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_autorace" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_autorace" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_autorace/environment")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_autorace/environment")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_autorace/environment")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_autorace/environment")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_autorace/environment")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_autorace/environment")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_autorace/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_autorace/environment")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_autorace/environment")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_autorace/environment")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_autorace/environment")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_autorace/environment")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_autorace/environment")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_autorace/environment")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_autorace")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_autorace")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_autorace")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_autorace")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_autorace")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_autorace")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_autorace")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_autorace")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_autorace")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_autorace")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_autorace")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_autorace")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_autorace")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_autorace")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_autorace")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_autorace")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_autorace")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_autorace")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_autorace")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_autorace")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_autorace" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_autorace" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_autorace" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_autorace" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_core/turtlebot3_autoraceConfig.cmake" "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_core/turtlebot3_autoraceConfig-version.cmake" "DESTINATION" "share/turtlebot3_autorace/cmake")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_core/turtlebot3_autoraceConfig.cmake" "/home/andy/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_core/turtlebot3_autoraceConfig-version.cmake" "DESTINATION" "share/turtlebot3_autorace/cmake")
+# install(FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_core/turtlebot3_autoraceConfig.cmake" "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_core/turtlebot3_autoraceConfig-version.cmake" "DESTINATION" "share/turtlebot3_autorace/cmake")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_core/turtlebot3_autoraceConfig.cmake" "/home/rokey/turtlebot3_ws/build/turtlebot3_autorace/ament_cmake_core/turtlebot3_autoraceConfig-version.cmake" "DESTINATION" "share/turtlebot3_autorace/cmake")
 
-# install(FILES "/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace/package.xml" "DESTINATION" "share/turtlebot3_autorace")
-ament_cmake_symlink_install_files("/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/andy/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace/package.xml" "DESTINATION" "share/turtlebot3_autorace")
+# install(FILES "/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace/package.xml" "DESTINATION" "share/turtlebot3_autorace")
+ament_cmake_symlink_install_files("/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace" FILES "/home/rokey/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace/package.xml" "DESTINATION" "share/turtlebot3_autorace")

@@ -1,1 +1,1 @@
-/home/andy/turtlebot3_ws/build/turtlebot3_autorace_detect/launch/detect_lane.launch.py
+/home/rokey/turtlebot3_ws/build/turtlebot3_autorace_detect/launch/detect_lane.launch.py

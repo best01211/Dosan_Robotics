@@ -1,1 +1,1 @@
-/home/andy/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake
+/home/rokey/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake

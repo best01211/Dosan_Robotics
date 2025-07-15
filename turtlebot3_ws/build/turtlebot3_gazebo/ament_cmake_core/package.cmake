@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "turtlebot3_gazebo")
-set(turtlebot3_gazebo_VERSION "2.3.6")
+set(turtlebot3_gazebo_VERSION "2.3.8")
 set(turtlebot3_gazebo_MAINTAINER "Pyo <pyo@robotis.com>")
 set(turtlebot3_gazebo_BUILD_DEPENDS "gazebo_ros_pkgs" "geometry_msgs" "nav_msgs" "rclcpp" "sensor_msgs" "tf2")
 set(turtlebot3_gazebo_BUILDTOOL_DEPENDS "ament_cmake")
