@@ -1,0 +1,41 @@
+[1.213s] Invoking command in '/home/andy/turtlebot3_ws/build/turtlebot3_fake_node': AMENT_PREFIX_PATH=/home/andy/turtlebot3_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andy/turtlebot3_ws/install/turtlebot3_msgs:/home/andy/turtlebot3_ws/install/turtlebot3_navigation2:/home/andy/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/andy/turtlebot3_ws/install/turtlebot3_description:/home/andy/turtlebot3_ws/install/turtlebot3_cartographer:/home/andy/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/andy/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/andy/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/andy/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/andy/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/andy/turtlebot3_ws/install/turtlebot3_fake_node
+[1.476s] -- The C compiler identification is GNU 11.4.0
+[1.769s] -- The CXX compiler identification is GNU 11.4.0
+[1.808s] -- Detecting C compiler ABI info
+[2.075s] -- Detecting C compiler ABI info - done
+[2.128s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.130s] -- Detecting C compile features
+[2.134s] -- Detecting C compile features - done
+[2.157s] -- Detecting CXX compiler ABI info
+[2.481s] -- Detecting CXX compiler ABI info - done
+[2.526s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.530s] -- Detecting CXX compile features
+[2.530s] -- Detecting CXX compile features - done
+[2.536s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.848s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.035s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.114s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.239s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.267s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.310s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.344s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.413s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.633s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[4.730s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[4.902s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.911s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.297s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.398s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.555s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.633s] -- Looking for pthread.h
+[5.937s] -- Looking for pthread.h - found
+[5.945s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.135s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.138s] -- Found Threads: TRUE  
+[6.304s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[6.399s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[6.458s] -- Found tf2_msgs: 0.25.12 (/opt/ros/humble/share/tf2_msgs/cmake)
+[6.788s] -- Found turtlebot3_msgs: 2.4.0 (/home/andy/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake)
+[7.275s] -- Configuring done
+[7.353s] -- Generating done
+[7.381s] -- Build files have been written to: /home/andy/turtlebot3_ws/build/turtlebot3_fake_node

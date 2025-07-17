@@ -1,0 +1,24 @@
+[3.188s] Invoking command in '/home/andy/turtlebot3_ws/src/turtlebot3_parking_mission': PYTHONPATH=/home/andy/turtlebot3_ws/build/turtlebot3_parking_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andy/turtlebot3_ws/install/turtlebot3_parking_mission/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_parking_mission build --build-base /home/andy/turtlebot3_ws/build/turtlebot3_parking_mission/build install --record /home/andy/turtlebot3_ws/build/turtlebot3_parking_mission/install.log --single-version-externally-managed install_data
+[4.461s] running egg_info
+[4.464s] writing ../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/PKG-INFO
+[4.465s] writing dependency_links to ../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/dependency_links.txt
+[4.465s] writing entry points to ../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/entry_points.txt
+[4.466s] writing requirements to ../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/requires.txt
+[4.466s] writing top-level names to ../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/top_level.txt
+[4.476s] reading manifest file '../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/SOURCES.txt'
+[4.480s] writing manifest file '../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/SOURCES.txt'
+[4.480s] running build
+[4.481s] running build_py
+[4.481s] copying turtlebot3_parking_mission/parking_mission_node.py -> /home/andy/turtlebot3_ws/build/turtlebot3_parking_mission/build/lib/turtlebot3_parking_mission
+[4.483s] running install
+[4.484s] running install_lib
+[4.490s] copying /home/andy/turtlebot3_ws/build/turtlebot3_parking_mission/build/lib/turtlebot3_parking_mission/parking_mission_node.py -> /home/andy/turtlebot3_ws/install/turtlebot3_parking_mission/lib/python3.10/site-packages/turtlebot3_parking_mission
+[4.496s] byte-compiling /home/andy/turtlebot3_ws/install/turtlebot3_parking_mission/lib/python3.10/site-packages/turtlebot3_parking_mission/parking_mission_node.py to parking_mission_node.cpython-310.pyc
+[4.500s] running install_data
+[4.500s] running install_egg_info
+[4.507s] removing '/home/andy/turtlebot3_ws/install/turtlebot3_parking_mission/lib/python3.10/site-packages/turtlebot3_parking_mission-0.0.0-py3.10.egg-info' (and everything under it)
+[4.509s] Copying ../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info to /home/andy/turtlebot3_ws/install/turtlebot3_parking_mission/lib/python3.10/site-packages/turtlebot3_parking_mission-0.0.0-py3.10.egg-info
+[4.513s] running install_scripts
+[4.602s] Installing parking_mission_node script to /home/andy/turtlebot3_ws/install/turtlebot3_parking_mission/lib/turtlebot3_parking_mission
+[4.604s] writing list of installed files to '/home/andy/turtlebot3_ws/build/turtlebot3_parking_mission/install.log'
+[4.771s] Invoked command in '/home/andy/turtlebot3_ws/src/turtlebot3_parking_mission' returned '0': PYTHONPATH=/home/andy/turtlebot3_ws/build/turtlebot3_parking_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andy/turtlebot3_ws/install/turtlebot3_parking_mission/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_parking_mission build --build-base /home/andy/turtlebot3_ws/build/turtlebot3_parking_mission/build install --record /home/andy/turtlebot3_ws/build/turtlebot3_parking_mission/install.log --single-version-externally-managed install_data

@@ -1,0 +1,16 @@
+[1.124s] Invoking command in '/home/andy/turtlebot3_ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=/home/andy/turtlebot3_ws/install/turtlebot3_msgs:/home/andy/turtlebot3_ws/install/dynamixel_sdk:/home/andy/turtlebot3_ws/install/turtlebot3_navigation2:/home/andy/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/andy/turtlebot3_ws/install/turtlebot3_description:/home/andy/turtlebot3_ws/install/turtlebot3_cartographer:/home/andy/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/andy/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/andy/turtlebot3_ws/install/dynamixel_sdk/lib:/home/andy/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/andy/turtlebot3_ws/build/turtlebot3_node -- -j8 -l8
+[1.438s] [  7%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/reset.cpp.o[0m
+[1.452s] [ 14%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/motor_power.cpp.o[0m
+[1.454s] [ 21%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/turtlebot3.cpp.o[0m
+[1.464s] [ 28%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/sound.cpp.o[0m
+[1.469s] [ 35%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/dynamixel_sdk_wrapper.cpp.o[0m
+[1.501s] [ 42%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/odometry.cpp.o[0m
+[1.501s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/battery_state.cpp.o[0m
+[1.512s] [ 57%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/diff_drive_controller.cpp.o[0m
+[7.135s] [ 64%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/imu.cpp.o[0m
+[109.354s] [ 71%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/sensor_state.cpp.o[0m
+[121.845s] [ 78%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/joint_state.cpp.o[0m
+[133.731s] [ 85%] [32m[1mLinking CXX static library libturtlebot3_node_lib.a[0m
+[135.301s] [ 85%] Built target turtlebot3_node_lib
+[135.349s] [ 92%] [32mBuilding CXX object CMakeFiles/turtlebot3_ros.dir/src/node_main.cpp.o[0m
+[145.806s] [100%] [32m[1mLinking CXX executable turtlebot3_ros[0m

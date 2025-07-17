@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/dependency_links.txt
+writing entry points to ../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/entry_points.txt
+writing requirements to ../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/requires.txt
+writing top-level names to ../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/top_level.txt
+reading manifest file '../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info/SOURCES.txt'
+running build
+running build_py
+copying turtlebot3_parking_mission/detect_lane_offset.py -> /home/andy/turtlebot3_ws/build/turtlebot3_parking_mission/build/lib/turtlebot3_parking_mission
+running install
+running install_lib
+copying /home/andy/turtlebot3_ws/build/turtlebot3_parking_mission/build/lib/turtlebot3_parking_mission/detect_lane_offset.py -> /home/andy/turtlebot3_ws/install/turtlebot3_parking_mission/lib/python3.10/site-packages/turtlebot3_parking_mission
+byte-compiling /home/andy/turtlebot3_ws/install/turtlebot3_parking_mission/lib/python3.10/site-packages/turtlebot3_parking_mission/detect_lane_offset.py to detect_lane_offset.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/andy/turtlebot3_ws/install/turtlebot3_parking_mission/lib/python3.10/site-packages/turtlebot3_parking_mission-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/turtlebot3_parking_mission/turtlebot3_parking_mission.egg-info to /home/andy/turtlebot3_ws/install/turtlebot3_parking_mission/lib/python3.10/site-packages/turtlebot3_parking_mission-0.0.0-py3.10.egg-info
+running install_scripts
+Installing parking_mission_node script to /home/andy/turtlebot3_ws/install/turtlebot3_parking_mission/lib/turtlebot3_parking_mission
+writing list of installed files to '/home/andy/turtlebot3_ws/build/turtlebot3_parking_mission/install.log'

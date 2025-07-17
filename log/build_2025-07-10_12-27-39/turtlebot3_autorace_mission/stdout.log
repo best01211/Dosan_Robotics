@@ -1,0 +1,33 @@
+running develop
+running egg_info
+creating turtlebot3_autorace_mission.egg-info
+writing turtlebot3_autorace_mission.egg-info/PKG-INFO
+writing dependency_links to turtlebot3_autorace_mission.egg-info/dependency_links.txt
+writing entry points to turtlebot3_autorace_mission.egg-info/entry_points.txt
+writing requirements to turtlebot3_autorace_mission.egg-info/requires.txt
+writing top-level names to turtlebot3_autorace_mission.egg-info/top_level.txt
+writing manifest file 'turtlebot3_autorace_mission.egg-info/SOURCES.txt'
+reading manifest file 'turtlebot3_autorace_mission.egg-info/SOURCES.txt'
+writing manifest file 'turtlebot3_autorace_mission.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3-autorace-mission.egg-link (link to .)
+Installing avoid_construction script to /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/turtlebot3_autorace_mission
+Installing control_lane script to /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/turtlebot3_autorace_mission
+Installing mission_tunnel script to /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/turtlebot3_autorace_mission
+
+Installed /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission
+running symlink_data
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/ament_index
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/ament_index/resource_index
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/ament_index/resource_index/packages
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/resource/turtlebot3_autorace_mission -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/ament_index/resource_index/packages
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/package.xml -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/launch
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/launch/mission_tunnel.launch.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/launch
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/launch/control_lane.launch.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/launch
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/launch/mission_construction.launch.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/launch
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/param
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/param/navigation.yaml -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/param
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/map
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/map/map.pgm -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/map
+symbolically linking /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/map/map.yaml -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/map

@@ -1,0 +1,51 @@
+[0.077s] Invoking command in '/home/andy/turtlebot3_ws/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/andy/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andy/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/andy/turtlebot3_ws/install/dynamixel_sdk:/home/andy/turtlebot3_ws/install/turtlebot3_navigation2:/home/andy/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/andy/turtlebot3_ws/install/turtlebot3_description:/home/andy/turtlebot3_ws/install/turtlebot3_cartographer:/opt/ros/humble LD_LIBRARY_PATH=/home/andy/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/andy/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/andy/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/andy/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/andy/turtlebot3_ws/install/dynamixel_sdk_examples
+[0.482s] -- The C compiler identification is GNU 11.4.0
+[0.773s] -- The CXX compiler identification is GNU 11.4.0
+[0.909s] -- Detecting C compiler ABI info
+[1.289s] -- Detecting C compiler ABI info - done
+[1.364s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.364s] -- Detecting C compile features
+[1.369s] -- Detecting C compile features - done
+[1.380s] -- Detecting CXX compiler ABI info
+[1.704s] -- Detecting CXX compiler ABI info - done
+[1.763s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.764s] -- Detecting CXX compile features
+[1.764s] -- Detecting CXX compile features - done
+[1.798s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.260s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.739s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.912s] -- Found dynamixel_sdk: 3.8.4 (/home/andy/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[3.921s] -- Found dynamixel_sdk_custom_interfaces: 3.8.4 (/home/andy/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake)
+[4.131s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.156s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.212s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.290s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.350s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.524s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[4.728s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.738s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.187s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.302s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.583s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.651s] -- Looking for pthread.h
+[5.932s] -- Looking for pthread.h - found
+[5.934s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.176s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.182s] -- Found Threads: TRUE  
+[6.437s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[6.446s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.902s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.918s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.919s] -- Configured cppcheck include dirs: /home/andy/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples/include
+[6.919s] -- Configured cppcheck exclude dirs and/or files: 
+[6.928s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.928s] -- Configured cpplint exclude dirs and/or files: 
+[6.932s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.940s] -- Added test 'lint_cmake' to check CMake code style
+[6.943s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.951s] -- Added test 'uncrustify' to check C / C++ code style
+[6.953s] -- Configured uncrustify additional arguments: 
+[6.955s] -- Added test 'xmllint' to check XML markup files
+[6.969s] -- Configuring done
+[7.025s] -- Generating done
+[7.052s] -- Build files have been written to: /home/andy/turtlebot3_ws/build/dynamixel_sdk_examples

@@ -1,0 +1,50 @@
+running develop
+Removing /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3-autorace-mission.egg-link (link to .)
+running egg_info
+writing ../../../build/turtlebot3_autorace_mission/turtlebot3_autorace_mission.egg-info/PKG-INFO
+writing dependency_links to ../../../build/turtlebot3_autorace_mission/turtlebot3_autorace_mission.egg-info/dependency_links.txt
+writing entry points to ../../../build/turtlebot3_autorace_mission/turtlebot3_autorace_mission.egg-info/entry_points.txt
+writing requirements to ../../../build/turtlebot3_autorace_mission/turtlebot3_autorace_mission.egg-info/requires.txt
+writing top-level names to ../../../build/turtlebot3_autorace_mission/turtlebot3_autorace_mission.egg-info/top_level.txt
+reading manifest file '../../../build/turtlebot3_autorace_mission/turtlebot3_autorace_mission.egg-info/SOURCES.txt'
+writing manifest file '../../../build/turtlebot3_autorace_mission/turtlebot3_autorace_mission.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build
+creating /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build/lib
+creating /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build/lib/turtlebot3_autorace_mission
+copying turtlebot3_autorace_mission/mission_tunnel.py -> /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build/lib/turtlebot3_autorace_mission
+copying turtlebot3_autorace_mission/control_lane.py -> /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build/lib/turtlebot3_autorace_mission
+copying turtlebot3_autorace_mission/__init__.py -> /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build/lib/turtlebot3_autorace_mission
+copying turtlebot3_autorace_mission/avoid_construction.py -> /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build/lib/turtlebot3_autorace_mission
+copying turtlebot3_autorace_mission/detect_line_shape_node.py -> /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build/lib/turtlebot3_autorace_mission
+running install
+running install_lib
+creating /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3_autorace_mission
+copying /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build/lib/turtlebot3_autorace_mission/mission_tunnel.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3_autorace_mission
+copying /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build/lib/turtlebot3_autorace_mission/control_lane.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3_autorace_mission
+copying /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build/lib/turtlebot3_autorace_mission/__init__.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3_autorace_mission
+copying /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build/lib/turtlebot3_autorace_mission/avoid_construction.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3_autorace_mission
+copying /home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/build/lib/turtlebot3_autorace_mission/detect_line_shape_node.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3_autorace_mission
+byte-compiling /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3_autorace_mission/mission_tunnel.py to mission_tunnel.cpython-310.pyc
+byte-compiling /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3_autorace_mission/control_lane.py to control_lane.cpython-310.pyc
+byte-compiling /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3_autorace_mission/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3_autorace_mission/avoid_construction.py to avoid_construction.cpython-310.pyc
+byte-compiling /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3_autorace_mission/detect_line_shape_node.py to detect_line_shape_node.cpython-310.pyc
+running install_data
+copying resource/turtlebot3_autorace_mission -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/ament_index/resource_index/packages
+copying package.xml -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission
+copying launch/mission_tunnel.launch.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/launch
+copying launch/control_lane.launch.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/launch
+copying launch/mission_construction.launch.py -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/launch
+copying param/navigation.yaml -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/param
+copying map/map.pgm -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/map
+copying map/map.yaml -> /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/share/turtlebot3_autorace_mission/map
+running install_egg_info
+Copying ../../../build/turtlebot3_autorace_mission/turtlebot3_autorace_mission.egg-info to /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/python3.10/site-packages/turtlebot3_autorace_mission-1.2.2-py3.10.egg-info
+running install_scripts
+Installing avoid_construction script to /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/turtlebot3_autorace_mission
+Installing control_lane script to /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/turtlebot3_autorace_mission
+Installing detect_line_shape_node script to /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/turtlebot3_autorace_mission
+Installing mission_tunnel script to /home/andy/turtlebot3_ws/install/turtlebot3_autorace_mission/lib/turtlebot3_autorace_mission
+writing list of installed files to '/home/andy/turtlebot3_ws/build/turtlebot3_autorace_mission/install.log'

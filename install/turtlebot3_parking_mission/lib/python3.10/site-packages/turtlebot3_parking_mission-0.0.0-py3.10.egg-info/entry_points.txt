@@ -1,0 +1,4 @@
+[console_scripts]
+detect_lane_offset = turtlebot3_parking_mission.detect_lane_offset:main
+parking_mission_node = turtlebot3_parking_mission.parking_mission_node:main
+
