@@ -1,0 +1,246 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# Author: Rujin Kim
+
+import rclpy
+from rclpy.node import Node
+import cv2
+import numpy as np
+from sensor_msgs.msg import Image
+from geometry_msgs.msg import Twist
+from cv_bridge import CvBridge
+
+import os
+import yaml
+from ament_index_python.packages import get_package_share_directory
+
+
+
+class LaneDetector(Node):
+    def __init__(self):
+        super().__init__('lane_detector')
+        
+        self.bridge = CvBridge()
+        self.subscription = self.create_subscription(
+            # remapped from launch /camera/image_raw => 
+            Image, '/detect/image_input', self.image_callback, 10)        
+        self.publisher = self.create_publisher(
+            Twist, '/cmd_vel', 10)
+
+        self.img_width = 320
+        self.img_height = 240
+        self.roi_top = int(self.img_height * 0.6)
+
+        # PID
+        self.prev_error = 0
+        self.integral = 0
+
+        self.declare_parameter('kp', 0.8)
+        self.declare_parameter('ki', 0.0)
+        self.declare_parameter('kd', 0.1)
+
+        self.kp = self.get_parameter('kp').value
+        self.ki = self.get_parameter('ki').value
+        self.kd = self.get_parameter('kd').value
+
+
+        self.get_logger().info(f"Loaded PID: Kp={self.kp}, Ki={self.ki}, Kd={self.kd}")
+
+        self.base_speed = 0.2
+        self.max_angular_speed = 1.0
+
+        self.get_logger().info("Lane Detector initialized (ROS2)")
+
+    def draw_text(self,image,text,x,y):
+        position = (x,y)  # x, y coordinates (bottom-left corner of the text)
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        font_scale = 1
+        color = (0, 0, 255)  # Red in BGR
+        thickness = 1
+        cv2.putText(image, text, position, font, font_scale, color, thickness, cv2.LINE_AA)
+        return image
+    
+    def preprocess_image(self, image):
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        blur = cv2.GaussianBlur(gray, (5, 5), 0)
+        return blur
+
+    def detect_edges(self, image):
+        return cv2.Canny(image, 50, 150)
+
+    def region_of_interest(self, image):
+        height, width = image.shape
+        vertices = np.array([
+            [0, height], [0, self.roi_top],
+            [width, self.roi_top], [width, height]
+        ], np.int32)
+        mask = np.zeros_like(image)
+        cv2.fillPoly(mask, [vertices], 255)
+        return cv2.bitwise_and(image, mask)
+
+    def detect_lines(self, image):
+        return cv2.HoughLinesP(
+            image, 1, np.pi/180, 30,
+            minLineLength=40, maxLineGap=100)
+
+    def separate_lines(self, lines):
+        left, right = [], []
+        if lines is None:
+            return None, None
+        for line in lines:
+            x1, y1, x2, y2 = line[0]
+            if x2 - x1 == 0:
+                continue
+            slope = (y2 - y1) / (x2 - x1)
+            if abs(slope) < 0.3:
+                continue
+            if slope < 0:
+                left.append([x1, y1, x2, y2])
+            else:
+                right.append([x1, y1, x2, y2])
+        return left, right
+
+    def get_line_equation(self, lines):
+        if not lines:
+            return None
+        x, y = [], []
+        for l in lines:
+            x.extend([l[0], l[2]])
+            y.extend([l[1], l[3]])
+        if len(x) < 2:
+            return None
+        return np.polyfit(y, x, 1)  # [slope, intercept]
+
+    def get_lane_center(self, left, right, y):
+        cx = self.img_width // 2
+        if left is not None and right is not None:
+            lx = left[0] * y + left[1]
+            rx = right[0] * y + right[1]
+            cx = (lx + rx) / 2
+        elif left is not None:
+            lx = left[0] * y + left[1]
+            cx = lx + 80
+        elif right is not None:
+            rx = right[0] * y + right[1]
+            cx = rx - 80
+
+        return int(cx)
+
+    def calculate_steering_angle(self, center_x):
+
+        error = center_x - self.img_width // 2
+        self.integral += error
+        derivative = error - self.prev_error
+
+        output = self.kp * error + self.ki * self.integral + self.kd * derivative
+        self.prev_error = error
+        angle = -output * 0.01
+
+        return max(-self.max_angular_speed, min(self.max_angular_speed, angle))
+
+    def draw_lanes(self, image, left, right):
+        line_img = np.zeros_like(image)
+        y1, y2 = self.img_height, self.roi_top
+        if left is not None:
+            x1 = int(left[0] * y1 + left[1])
+            x2 = int(left[0] * y2 + left[1])
+            cv2.line(line_img, (x1, y1), (x2, y2), (0, 255, 0), 3)
+        if right is not None:
+            x1 = int(right[0] * y1 + right[1])
+            x2 = int(right[0] * y2 + right[1])
+            cv2.line(line_img, (x1, y1), (x2, y2), (0, 255, 0), 3)
+        y_center = int(self.img_height * 0.8)
+        cx = self.get_lane_center(left, right, y_center)
+
+        line_img = self.draw_text(line_img,str(cx),10,30)
+        
+        cv2.circle(line_img, (cx, y_center), 5, (0, 0, 255), -1)
+        cv2.line(line_img, (self.img_width//2, y_center), (cx, y_center), (255, 0, 0), 2)
+        return cv2.addWeighted(image, 0.8, line_img, 1, 0)
+
+    def image_callback(self, msg):
+        try:
+            img = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+            img = cv2.resize(img, (self.img_width, self.img_height))
+            processed = self.preprocess_image(img)
+
+            edges = self.detect_edges(processed)
+            roi_edges = self.region_of_interest(edges)
+
+            lines = self.detect_lines(roi_edges)
+
+            left, right = self.separate_lines(lines)
+
+            left_line = self.get_line_equation(left)
+            right_line = self.get_line_equation(right)
+
+            y_target = int(self.img_height * 0.8)
+
+            center_x = self.get_lane_center(left_line, right_line, y_target)
+            angular_z = self.calculate_steering_angle(center_x)
+
+
+
+
+
+            twist = Twist()
+
+
+            if left_line is not None and right_line is not None:
+                twist.linear.x = self.base_speed
+                twist.angular.z = angular_z
+                self.get_logger().warn("State 2")
+            elif left_line is None and right_line is not None:
+                twist.linear.x = self.base_speed
+                twist.angular.z = angular_z
+                self.get_logger().warn("State 1")                
+            elif left_line is not None and right_line is None:
+                twist.linear.x = self.base_speed
+                twist.angular.z = angular_z
+                self.get_logger().warn("State 3")
+            else:
+                twist.linear.x = 0.0
+                twist.angular.z = 0.0
+                self.get_logger().warn("State 0")
+
+
+            self.publisher.publish(twist)
+
+
+
+            result = self.draw_lanes(img, left_line, right_line)
+            cv2.imshow("Lane Detection", result)
+            #cv2.imshow("Edges", roi_edges)
+            cv2.waitKey(1)
+
+            self.get_logger().info(f"Center X: {center_x}, Angular Z: {angular_z:.2f}")
+        except Exception as e:
+            self.get_logger().error(f"Image processing error: {e}")
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = LaneDetector()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+        cv2.destroyAllWindows()
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,10 @@
+---
+camera:
+  image_projection:
+    ros__parameters:
+      camera:
+        extrinsic_camera_calibration:
+          top_x: 120 
+          top_y: 120 
+          bottom_x: 197 
+          bottom_y: 110

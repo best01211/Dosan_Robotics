@@ -1,0 +1,194 @@
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
+import cv2
+import numpy as np
+
+
+class ImageProcessor(Node):
+    def __init__(self):
+        super().__init__('image_processor_node')
+
+        self.roi = 'Bottom'
+        self.bridge = CvBridge()
+
+        # Subscribe to raw image
+        self.subscription = self.create_subscription(
+            Image,
+            '/camera/image_raw',
+            self.image_callback,
+            10
+        )
+
+        # Publisher for processed image
+        self.publisher = self.create_publisher(
+            Image,
+            '/camera/processed',
+            10
+        )
+
+        self.get_logger().info('Image Processor Node with imshow started.')
+
+    def auto_exposure(self,frame):
+        yuv = cv2.cvtColor(frame, cv2.COLOR_BGR2YUV)
+        yuv[:, :, 0] = cv2.equalizeHist(yuv[:, :, 0])
+        return cv2.cvtColor(yuv, cv2.COLOR_YUV2BGR)
+
+    def white_balance_simple(self,img):
+        lab = cv2.cvtColor(img, cv2.COLOR_BGR2LAB).astype(np.float32)
+
+        avg_a = np.average(lab[:, :, 1])
+        avg_b = np.average(lab[:, :, 2])
+
+        lab[:, :, 1] -= ((avg_a - 128) * (lab[:, :, 0] / 255.0) * 1.1)
+        lab[:, :, 2] -= ((avg_b - 128) * (lab[:, :, 0] / 255.0) * 1.1)
+
+        lab = np.clip(lab, 0, 255).astype(np.uint8)
+        return cv2.cvtColor(lab, cv2.COLOR_LAB2BGR)
+
+    def huffman_lane(self,frame):
+
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  # Grayscale
+        edges = cv2.Canny(gray, 50, 150)               # ✅ Canny Edge Detection
+
+        # ROI 설정 (예시: 하단 절반)
+        height = frame.shape[0]
+        width = frame.shape[1]
+        mask = np.zeros_like(edges)
+
+        ratio = 0.5
+
+  
+        self.roi = 'Top'         
+
+        if self.roi == 'Bottom':
+            roi_vertices = np.array([[(0, height), (width, height), (width, int(height*ratio)), (0, int(height*ratio))]], dtype=np.int32)               
+            #                           좌상단     , 우상단          , 우하단                     ,좌하단
+            cv2.fillPoly(mask, roi_vertices, 255)
+            roi_edges = cv2.bitwise_and(edges, mask)
+
+            top_left = (0, int(height * ratio))
+            bottom_right = (width, height)            
+            color = (255,0,0)
+            cv2.rectangle(frame, top_left, bottom_right, color, 2)  # 초록색 선
+
+        elif self.roi == 'Top':
+            roi_vertices = np.array([[(0, height), (width, height), (width, int(height*ratio)), (0, int(height*ratio))]], dtype=np.int32)               
+            
+            cv2.fillPoly(mask, roi_vertices, 255)
+            inverted_mask = cv2.bitwise_not(mask)
+            roi_edges = cv2.bitwise_and(edges, inverted_mask)
+
+            top_left = (1, 1)
+            bottom_right = (int(width-1), int(height/2))
+            color = (255,255,0)
+            cv2.rectangle(frame, top_left, bottom_right, color, 2)  # 초록색 선
+
+
+        lines = cv2.HoughLinesP(
+            roi_edges,
+            rho=1,
+            theta=np.pi / 180,
+            threshold=50,
+            minLineLength=50,
+            maxLineGap=150
+        )
+
+        # 선 그리기
+        if lines is not None:
+            for line in lines:
+                x1, y1, x2, y2 = line[0]
+                cv2.line(frame, (x1, y1), (x2, y2), color, 2)
+                
+        return frame
+    
+    def process_image(self,frame):
+
+
+        # adding Gaussian blur to the image of original
+        frame = cv2.GaussianBlur(frame, (5, 5), 0)
+
+
+        frame = self.huffman_lane(frame)
+        cv2.imshow("huffman_lane Image", frame)
+        cv2.waitKey(1)  # necessary for OpenCV GUI to update
+        
+
+        # 자동 노출 보정 + 화이트 밸런싱
+        frame = self.auto_exposure(frame)
+        frame = self.white_balance_simple(frame)
+
+        # HSV 변환
+        hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+
+        # 흰색 마스킹
+        # 기존 level.yaml 파일 값
+        # lower_white = np.array([0, 105, 0])
+        # upper_white = np.array([179, 255, 70])
+        
+        # 새로운 값
+        lower_white = np.array([0, 0, 200])
+        upper_white = np.array([180, 60, 255])
+        mask_white = cv2.inRange(hsv, lower_white, upper_white)
+
+        # 노란색 마스킹
+        # 기존 level.yaml 파일 값
+        # lower_yellow = np.array([10, 95, 700])
+        # upper_yellow = np.array([127, 255, 255])
+        
+        # 새로운 값
+        lower_yellow = np.array([15, 80, 80])
+        upper_yellow = np.array([35, 255, 255])
+        mask_yellow = cv2.inRange(hsv, lower_yellow, upper_yellow)
+
+        # 합치기
+        mask_combined = cv2.bitwise_or(mask_white, mask_yellow)
+
+        return mask_white, mask_yellow, mask_combined
+
+    def image_callback(self, msg):
+        try:
+            # Convert ROS Image to OpenCV format
+            frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+
+            mask_white, mask_yellow, mask_combined = self.process_image(frame)
+            # Example: convert to grayscale and back to BGR
+
+            #gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            mask_white = cv2.cvtColor(mask_white, cv2.COLOR_GRAY2BGR)
+            mask_yellow = cv2.cvtColor(mask_yellow, cv2.COLOR_GRAY2BGR)
+            mask_combined = cv2.cvtColor(mask_combined, cv2.COLOR_GRAY2BGR)
+
+            # Show the processed image using OpenCV
+            #cv2.imshow("mask_white Image", mask_white)
+            #cv2.waitKey(1)  # necessary for OpenCV GUI to update
+
+            #cv2.imshow("mask_yellow Image", mask_yellow)
+            #cv2.waitKey(1)  # necessary for OpenCV GUI to update
+
+            #cv2.imshow("mask_combined Image", mask_combined)
+            #cv2.waitKey(1)  # necessary for OpenCV GUI to update
+
+
+            # Convert back to ROS Image and publish
+            out_msg = self.bridge.cv2_to_imgmsg(mask_combined, encoding='bgr8')
+            self.publisher.publish(out_msg)
+
+        except Exception as e:
+            self.get_logger().error(f"Image processing error: {e}")
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = ImageProcessor()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        cv2.destroyAllWindows()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
