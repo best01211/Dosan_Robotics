@@ -1,0 +1,55 @@
+내부 파라미터 행렬 (Intrinsic Matrix)
+카메라가 어떻게 3D 공간을 2D 이미지로 투영하는지를 정의합니다.
+
+[ fx,  0, cx,
+   0, fy, cy,
+   0,  0,  1 ]
+
+
+fx, fy	x, y 방향의 초점 거리 (focal length)
+cx, cy	주점 (principal point): 이미지의 중심점 좌표
+
+distortion_model
+왜곡 모델 이름입니다.
+
+ROS에서 기본적으로 사용하는 모델은 plumb_bob입니다.
+
+Radial distortion (반지름 왜곡)
+
+Tangential distortion (기울기 왜곡)
+
+distortion_coefficients
+왜곡 계수 (D) 값입니다.
+
+일반적으로 다음 5개의 계수를 사용합니다:
+[k1, k2, t1, t2, k3]
+
+ rectification_matrix
+보정 행렬 (R)
+스테레오 카메라에서 이미지 정렬(좌우 일치)을 위해 사용됩니다.
+
+단일 카메라일 경우 단위 행렬 사용:
+
+
+projection_matrix
+투영 행렬 (P)
+보정된 이미지를 3D → 2D로 변환할 때 사용됩니다.
+
+
+ 목적
+카메라가 생성하는 이미지의 왜곡을 제거하고, 정확한 2D-3D 계산을 가능하게 함
+
+Visual SLAM, 객체 추적, 거리 측정 등에 필수적
+
+📌 사용하는 ROS 패키지
+camera_info_manager 패키지
+
+image_proc, image_pipeline, stereo_image_proc 등
+
+from camera_info_manager import CameraInfoManager
+
+info_manager = CameraInfoManager(cname='camera',
+                                 url='file:///path/to/calibration_params.yaml')
+info_manager.loadCameraInfo()
+camera_info = info_manager.getCameraInfo()
+

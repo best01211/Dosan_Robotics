@@ -1,0 +1,9 @@
+turtlebot3_camera_node:
+  ros__parameters:
+    camera_id: 0
+    frame_rate: 30.0
+    camera_name: "camera"
+    camera_frame_id: "camera_link"
+    jpeg_quality: 85
+    image_width: 320
+    image_height: 240
